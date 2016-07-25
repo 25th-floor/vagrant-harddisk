@@ -23,9 +23,10 @@ module VagrantPlugins
         Config
       end
 
-      # action_hook 'harddiskCreation' do |hook|
-      #   hook.before Vagrant::Action::Builtin::Provision, Action::Creation
-      # end
+      action_hook 'harddiskCreation' do |hook|
+        require_relative 'action/creation'
+        hook.before Vagrant::Action::Builtin::Provision, Action::Creation
+      end
     end
   end
 end
