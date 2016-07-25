@@ -12,15 +12,24 @@ $ vagrant plugin install vagrant-harddisk
 
 ## Configuration
 
- TODO: ?????
+After installing the plugin (see above), add the following code to configure an additional hard disk:
+
+```
+  config.harddisk.disks['database'] = {
+      :size           => '20G',
+      :position       => 2,
+      :interface_type => 'sata',
+      :mount_point    => '/dbstorage',
+  }
+```
+
+Note: mount_point is not used at the moment.
 
 ## Development
 
-TODO: Replace default text.
+After checking out the repo, run `bundle` to install dependencies. Then, run `bundle exec rake spec` to run the tests. 
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+If you want to try your changes with a sample Vagrantfile, just run `bundle exec vagrant up`.
 
 ## Contributing
 
