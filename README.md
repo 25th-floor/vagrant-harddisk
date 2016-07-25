@@ -1,5 +1,7 @@
 # Vagrant Harddisk Plugin
 
+[![Build Status](https://travis-ci.org/25th-floor/vagrant-harddisk.svg?branch=master)](https://travis-ci.org/25th-floor/vagrant-harddisk)
+
 This vagrant plugin creates and formats additional hard disks to use inside the machine.
 
 Warning: At the moment this plugin just works with Parallels, and therefore with OS X.
