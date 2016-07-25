@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "vagrant-harddisk"
   spec.version       = VagrantPlugins::Harddisk::VERSION
   spec.authors       = ["Martin Prebio"]
-  spec.email         = ["mp@25th-floor.com"]
+  spec.email         = ["martin.prebio@gmail.com"]
 
   spec.summary       = "Creates additional harddisks in vagrant machines."
   spec.description   = "Creates additional harddisks in vagrant machines."
-  spec.homepage      = "https://github.com/bountin/vagrant-harddisk"
+  spec.homepage      = "https://github.com/25th-floor/vagrant-harddisk"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

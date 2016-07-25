@@ -1,30 +1,22 @@
-# Vagrant::Harddisk
+# Vagrant Harddisk Plugin
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/vagrant/harddisk`. To experiment with that code, run `bin/console` for an interactive prompt.
+This vagrant plugin creates and formats additional hard disks to use inside the machine.
 
-TODO: Delete this and the text above, and describe your gem
+Warning: At the moment this plugin just works with Parallels, and therefore with OS X.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'vagrant-harddisk'
+```
+$ vagrant plugin install vagrant-harddisk
 ```
 
-And then execute:
+## Configuration
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install vagrant-harddisk
-
-## Usage
-
-TODO: Write usage instructions here
+ TODO: ?????
 
 ## Development
+
+TODO: Replace default text.
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
@@ -32,10 +24,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/vagrant-harddisk.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/25th-floor/vagrant-harddisk.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
